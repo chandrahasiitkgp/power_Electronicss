@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+/* KaTeX styling support */
+.katex {
+  font-size: 1.05em !important;
+  text-rendering: geometricPrecision;
+}
+
+.inline-math {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.block-math .katex-display {
+  margin: 0.5em 0 !important;
+}
+
+/* Custom technical slider styling */
+input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #151f36;
+  height: 5px;
+  border-radius: 3px;
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #00f2fe;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 242, 254, 0.75);
+  transition: transform 0.1s ease;
+}
+
+input[type=range]::-webkit-slider-thumb:hover {
+  transform: scale(1.25);
+}
+
+/* Lab scrollbar styling */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #050811;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a2642;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #33476d;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #print-report-modal, #print-report-modal * {
+    visibility: visible;
+  }
+}

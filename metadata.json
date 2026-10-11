@@ -1,0 +1,6 @@
+{
+  "name": "PowerSim Pro: Academic Power Electronics Studio",
+  "description": "Interactive academic power electronics simulator featuring numerical RK4 ODE solving, vector circuit schematics, real-time current routing, harmonic FFT decomposition, and mathematical derivations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
